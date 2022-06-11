@@ -1,7 +1,13 @@
 /*El estudiante digita calif. final y sabremos si obtiene la beca
 85-90=30%,90-94=50%, 95-98=75%, 99 0 100= 100% */
-
+fn usuario(){
+    println!("Digita tu Numero de ID: ");
+    let mut num_id:String=String::new();
+    std::io::stdin().read_line(&mut num_id).unwrap();
+    let _id_num:i32=num_id.trim().parse().unwrap();
+}
 fn beca(){
+    
     println!("Digita tus Mensualidad por Mes: " );
     let mut colegiatura:String=String::new();
     std::io::stdin().read_line(&mut colegiatura).unwrap();
@@ -20,6 +26,7 @@ fn beca(){
 
 }
 fn main() {
+    usuario();
     println!("Digita tu calificaciones" );
     let mut _calif:String=String::new();
     std::io::stdin().read_line(&mut _calif).unwrap();
