@@ -32,7 +32,7 @@ fn main() {
     std::io::stdin().read_line(&mut _calif).unwrap();
     let _alum_calif:i32=_calif.trim().parse().unwrap();
 
-    if _alum_calif >= 85 && _alum_calif <=90{
+    if _alum_calif >= 80 && _alum_calif <=90{
         println!("Bien hecho, has obtenido el 30% de beca.");
         beca()
     }
